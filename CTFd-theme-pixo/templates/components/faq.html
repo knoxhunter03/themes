@@ -1,0 +1,104 @@
+
+<div style=" color: white;
+font-family: 'JetBrains Mono', monospace; margin-top: 100px">
+
+<span class="heading2" style="text-align: center; display: block; text-align: center; margin: 0 auto;">
+    Frequently Asked Questions<br><span class="gradient-typo"><b>#FAQs</b></span></span>
+
+  <div class="faq-container" style="margin-top: 50px">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How many members are allowed in a team?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Each team must consist of 3 members. No individual participations are allowed.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Can I be part of more than one team?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>No, each participant can only be part of one team.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can teams collaborate and work together on solving challenges?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes, team members can collaborate and work together to solve challenges. Teamwork is encouraged.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Who is eligible to participate in the Cyper Quest event?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>The event is open to all students of the CSE-CTIS and CTMA Departments of Jain University.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Will team registration be handled by the organizers or do participants need to register their teams?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Team registration will be handled by the organizers. Participants will not need to register their teams themselves.</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is the expected code of conduct during the event?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Participants are expected to maintain a high standard of sportsmanship and ethical behaviour throughout the event. Any form of cheating, plagiarism, or unethical behaviour will result in disqualification.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Are there specific rules regarding solving challenges?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Challenges are divided into different categories, and teams can choose which challenges to work on and in which order. Flags for each challenge should be submitted in the specified format to earn points.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How should we submit flags for the challenges?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Flags must be submitted through the CTF platform using the provided submission form. The format for flag submission will be provided with each challenge description.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How are points awarded in the competition?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Points are awarded for solving challenges, and the team with the highest total points will be ranked first. The event will have a real-time leaderboard to display team rankings based on the points earned.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What happens if there's a dispute during the event?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>The organizers' decisions on all matters related to the event are final and binding. Any dispute arising during the event will be resolved by the organizers.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Are there any restrictions on collaboration between different teams?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p><b>Collaboration between different teams is strictly prohibited. Each team must work independently to solve challenges.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+
+
+<script>
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+const itemToggle = this.getAttribute('aria-expanded');
+
+for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+}
+
+if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+}
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
